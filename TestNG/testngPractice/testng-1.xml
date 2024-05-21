@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Eclipse Workspace/TestNG/testngPractice/src/main/java/com/test/Test1.java">
+        <classes>
+            <class name="com.test.Test1"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Eclipse Workspace/TestNG/testngPractice/src/main/java/com/test/Test2.java">
+        <classes>
+            <class name="com.test.Test2"/>
+        </classes>
+    </test>
+</suite>
