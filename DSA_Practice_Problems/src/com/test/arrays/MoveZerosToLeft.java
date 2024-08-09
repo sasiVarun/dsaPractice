@@ -6,27 +6,27 @@ public class MoveZerosToLeft {
 
 	public static void main(String[] args) {
 		int[] arr = {1, 0, 3, 0, 5, 0, 7,0};
-//      moveZeroesToLeft(arr);
-		int i = arr.length-1;
-		int j = arr.length-1;
-		
-		while(true) {
-			if(i == -1 || j==-1) {
-				break;
-			}
-			if(arr[i]!=0 && arr[j]==0) {
-				swap(arr,j,i);
-			}
-			
-			if(arr[j]!=0) {
-				j--;
-				i--;
-			}
-			
-			if(i!=-1 && arr[i]==0) {
-				i--;
-			}
-		}
+      moveZeroesToLeft(arr);
+//		int i = arr.length-1;
+//		int j = arr.length-1;
+//		
+//		while(true) {
+//			if(i == -1 || j==-1) {
+//				break;
+//			}
+//			if(arr[i]!=0 && arr[j]==0) {
+//				swap(arr,j,i);
+//			}
+//			
+//			if(arr[j]!=0) {
+//				j--;
+//				i--;
+//			}
+//			
+//			if(i!=-1 && arr[i]==0) {
+//				i--;
+//			}
+//		}
 		
 		System.out.println(Arrays.toString(arr));
 	}
@@ -37,6 +37,8 @@ public class MoveZerosToLeft {
 		arr[j] = temp;
 	}
 
+	//int[] arr = {1, 0, 3, 0, 5, 0, 7,0};
+	
 	public static void moveZeroesToLeft(int[] nums) {
       int left = nums.length-1; // Pointer for placing non-zero elements
       int right = nums.length-1; // Pointer for iterating through the array
